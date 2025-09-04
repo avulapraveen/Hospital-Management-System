@@ -1,0 +1,338 @@
+2025-09-02T17:32:15.923+05:30  INFO 19596 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] c.w.gp.AppointmentServiceApplication     : Starting AppointmentServiceApplication using Java 21.0.8 with PID 19596 (D:\123capstone project\AppointmentService\target\classes started by avula in D:\123capstone project\AppointmentService)
+2025-09-02T17:32:15.929+05:30  INFO 19596 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] c.w.gp.AppointmentServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-09-02T17:32:15.971+05:30  INFO 19596 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9094
+2025-09-02T17:32:15.972+05:30  INFO 19596 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=APPOINTMENT-SERVICE, profiles=[default], label=null, version=4dad9656a29741fba1fbc85c25258fb005cccdc0, state=
+2025-09-02T17:32:15.975+05:30  INFO 19596 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-02T17:32:15.976+05:30  INFO 19596 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-02T17:32:17.382+05:30  INFO 19596 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-02T17:32:17.492+05:30  INFO 19596 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 100 ms. Found 1 JPA repository interface.
+2025-09-02T17:32:17.882+05:30  INFO 19596 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0e279046-cc99-3ada-8672-e499e4562d4a
+2025-09-02T17:32:18.857+05:30  INFO 19596 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-09-02T17:32:18.874+05:30  INFO 19596 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-02T17:32:18.875+05:30  INFO 19596 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-09-02T17:32:18.925+05:30  INFO 19596 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-02T17:32:18.926+05:30  INFO 19596 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2949 ms
+2025-09-02T17:32:19.809+05:30  INFO 19596 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-02T17:32:19.892+05:30  INFO 19596 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-09-02T17:32:19.932+05:30  INFO 19596 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-02T17:32:20.372+05:30  INFO 19596 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-02T17:32:20.406+05:30  INFO 19596 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-02T17:32:22.162+05:30  WARN 19596 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1045, SQLState: 28000
+2025-09-02T17:32:22.163+05:30 ERROR 19596 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.h.engine.jdbc.spi.SqlExceptionHelper   : Access denied for user 'root'@'localhost' (using password: YES)
+2025-09-02T17:32:22.167+05:30  WARN 19596 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+
+org.hibernate.exception.GenericJDBCException: unable to obtain isolated JDBC connection [Access denied for user 'root'@'localhost' (using password: YES)] [n/a]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:63) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:336) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.9.jar:6.2.9]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.9.jar:6.2.9]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.9.jar:6.2.9]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.9.jar:6.2.9]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.4.jar:3.5.4]
+	at com.wipro.gp.AppointmentServiceApplication.main(AppointmentServiceApplication.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.4.jar:3.5.4]
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:416) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144) ~[HikariCP-6.3.1.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:368) ~[HikariCP-6.3.1.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:205) ~[HikariCP-6.3.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488) ~[HikariCP-6.3.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:576) ~[HikariCP-6.3.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:97) ~[HikariCP-6.3.1.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-6.3.1.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:483) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	... 38 common frames omitted
+
+2025-09-02T17:32:22.243+05:30  WARN 19596 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-02T17:32:22.258+05:30  INFO 19596 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (null)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-02T17:32:23.056+05:30  INFO 19596 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-02T17:32:23.081+05:30  INFO 19596 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-02T17:32:24.099+05:30  WARN 19596 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1045, SQLState: 28000
+2025-09-02T17:32:24.099+05:30 ERROR 19596 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.h.engine.jdbc.spi.SqlExceptionHelper   : Access denied for user 'root'@'localhost' (using password: YES)
+2025-09-02T17:32:24.135+05:30 ERROR 19596 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [Access denied for user 'root'@'localhost' (using password: YES)] [n/a]
+2025-09-02T17:32:24.136+05:30  WARN 19596 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [Access denied for user 'root'@'localhost' (using password: YES)] [n/a]
+2025-09-02T17:32:25.156+05:30  WARN 19596 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] z.r.i.AsyncReporter$BoundedAsyncReporter : Timed out waiting for in-flight spans to send
+2025-09-02T17:32:25.162+05:30  INFO 19596 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-09-02T17:32:25.188+05:30  INFO 19596 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-09-02T17:32:25.235+05:30 ERROR 19596 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [Access denied for user 'root'@'localhost' (using password: YES)] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.4.jar:3.5.4]
+	at com.wipro.gp.AppointmentServiceApplication.main(AppointmentServiceApplication.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.4.jar:3.5.4]
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [Access denied for user 'root'@'localhost' (using password: YES)] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:431) ~[spring-orm-6.2.9.jar:6.2.9]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.9.jar:6.2.9]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.9.jar:6.2.9]
+	... 18 common frames omitted
+Caused by: org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [Access denied for user 'root'@'localhost' (using password: YES)] [n/a]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:63) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:65) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:233) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:112) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.9.jar:6.2.9]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.9.jar:6.2.9]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.9.jar:6.2.9]
+	... 22 common frames omitted
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:416) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144) ~[HikariCP-6.3.1.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:368) ~[HikariCP-6.3.1.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:205) ~[HikariCP-6.3.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488) ~[HikariCP-6.3.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:576) ~[HikariCP-6.3.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:97) ~[HikariCP-6.3.1.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-6.3.1.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:483) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	... 43 common frames omitted
+
+2025-09-02T17:34:11.445+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] c.w.gp.AppointmentServiceApplication     : Starting AppointmentServiceApplication using Java 21.0.8 with PID 19952 (D:\123capstone project\AppointmentService\target\classes started by avula in D:\123capstone project\AppointmentService)
+2025-09-02T17:34:11.448+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] c.w.gp.AppointmentServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-09-02T17:34:11.492+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9094
+2025-09-02T17:34:11.492+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=APPOINTMENT-SERVICE, profiles=[default], label=null, version=4dad9656a29741fba1fbc85c25258fb005cccdc0, state=
+2025-09-02T17:34:11.494+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-02T17:34:11.495+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-02T17:34:12.527+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-02T17:34:12.642+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108 ms. Found 1 JPA repository interface.
+2025-09-02T17:34:12.974+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0e279046-cc99-3ada-8672-e499e4562d4a
+2025-09-02T17:34:13.682+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-09-02T17:34:13.698+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-02T17:34:13.698+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-09-02T17:34:13.748+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-02T17:34:13.748+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2252 ms
+2025-09-02T17:34:14.439+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-02T17:34:14.474+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-09-02T17:34:14.503+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-02T17:34:14.707+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-02T17:34:14.727+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-02T17:34:15.081+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e2771f4
+2025-09-02T17:34:15.084+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-02T17:34:15.200+05:30  WARN 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-02T17:34:15.216+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-02T17:34:15.892+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-02T17:34:16.463+05:30  WARN 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table appointments 
+       add column appointment_date_time datetime(6) not null" via JDBC [Data truncation: Incorrect datetime value: '0000-00-00 00:00:00' for column 'appointment_date_time' at row 1]
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table appointments 
+       add column appointment_date_time datetime(6) not null" via JDBC [Data truncation: Incorrect datetime value: '0000-00-00 00:00:00' for column 'appointment_date_time' at row 1]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:576) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:516) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.migrateTable(AbstractSchemaMigrator.java:334) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:84) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:233) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:112) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.9.jar:6.2.9]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.9.jar:6.2.9]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.9.jar:6.2.9]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.9.jar:6.2.9]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.4.jar:3.5.4]
+	at com.wipro.gp.AppointmentServiceApplication.main(AppointmentServiceApplication.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.4.jar:3.5.4]
+Caused by: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect datetime value: '0000-00-00 00:00:00' for column 'appointment_date_time' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:96) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:837) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:685) ~[mysql-connector-j-9.3.0.jar:9.3.0]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-6.3.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-6.3.1.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80) ~[hibernate-core-6.6.22.Final.jar:6.6.22.Final]
+	... 40 common frames omitted
+
+2025-09-02T17:34:16.514+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-02T17:34:17.210+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-02T17:34:17.287+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.s.c.openfeign.FeignClientFactoryBean   : For 'DOCTOR-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2025-09-02T17:34:17.362+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.s.c.openfeign.FeignClientFactoryBean   : For 'PATIENT-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2025-09-02T17:34:19.046+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-09-02T17:34:19.105+05:30  WARN 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-09-02T17:34:19.168+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-09-02T17:34:19.287+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-09-02T17:34:19.308+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-09-02T17:34:19.310+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-09-02T17:34:19.317+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-09-02T17:34:19.318+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-09-02T17:34:19.318+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-09-02T17:34:19.318+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-09-02T17:34:19.318+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-09-02T17:34:19.318+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-09-02T17:34:19.318+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-09-02T17:34:19.530+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-09-02T17:34:19.531+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-09-02T17:34:19.532+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-09-02T17:34:19.535+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1756814659535 with initial instances count: 2
+2025-09-02T17:34:19.547+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application APPOINTMENT-SERVICE with eureka with status UP
+2025-09-02T17:34:19.548+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1756814659548, current=UP, previous=STARTING]
+2025-09-02T17:34:19.550+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APPOINTMENT-SERVICE/susi:APPOINTMENT-SERVICE:8082: registering service...
+2025-09-02T17:34:19.568+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2025-09-02T17:34:19.569+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2025-09-02T17:34:19.586+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [restartedMain] [                                                 ] c.w.gp.AppointmentServiceApplication     : Started AppointmentServiceApplication in 10.152 seconds (process running for 10.926)
+2025-09-02T17:34:19.598+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APPOINTMENT-SERVICE/susi:APPOINTMENT-SERVICE:8082 - registration status: 204
+2025-09-02T17:34:20.048+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [RMI TCP Connection(9)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-02T17:34:20.048+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [RMI TCP Connection(9)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-02T17:34:20.049+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [RMI TCP Connection(9)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-09-02T17:34:20.576+05:30  WARN 19952 --- [APPOINTMENT-SERVICE] [AsyncReporter{ZipkinHttpClientSender{http://localhost:9411/api/v2/spans}}] [                                                 ] z.r.i.AsyncReporter$BoundedAsyncReporter : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2025-09-02T17:34:20.576+05:30  WARN 19952 --- [APPOINTMENT-SERVICE] [AsyncReporter{ZipkinHttpClientSender{http://localhost:9411/api/v2/spans}}] [                                                 ] z.r.i.AsyncReporter$BoundedAsyncReporter : Dropped 2 spans due to ConnectException()
+
+java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:955) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133) ~[java.net.http:na]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinHttpClientSender.postSpans(ZipkinHttpClientSender.java:60) ~[spring-boot-actuator-autoconfigure-3.5.4.jar:3.5.4]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:69) ~[spring-boot-actuator-autoconfigure-3.5.4.jar:3.5.4]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:41) ~[spring-boot-actuator-autoconfigure-3.5.4.jar:3.5.4]
+	at zipkin2.reporter.BaseHttpSender.send(BaseHttpSender.java:123) ~[zipkin-reporter-3.5.1.jar:na]
+	at zipkin2.reporter.internal.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:266) ~[zipkin-reporter-3.5.1.jar:na]
+	at zipkin2.reporter.internal.AsyncReporter$Flusher.run(AsyncReporter.java:352) ~[zipkin-reporter-3.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1065) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:280) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$2(PlainHttpConnection.java:238) ~[java.net.http:na]
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	... 1 common frames omitted
+Caused by: java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:202) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:786) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:874) ~[na:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210) ~[java.net.http:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571) ~[na:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212) ~[java.net.http:na]
+	... 9 common frames omitted
+
+2025-09-02T17:39:19.323+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-09-02T17:44:19.326+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-09-02T17:49:19.339+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-09-02T17:54:19.351+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-09-02T17:59:19.359+05:30  INFO 19952 --- [APPOINTMENT-SERVICE] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
